@@ -37,7 +37,9 @@
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**)
   - eg: `{{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}`
 - **`code`** (prop required: **`language`**; props optional: **`title`**, **`id`**, **`expand`** (default "△"), **`collapse`** (default "▽"), **`isCollapsed`**)
+
   - eg:
+
   ```go
   {{< code language="css" title="Really cool snippet" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
   pre {
@@ -207,13 +209,13 @@ First, you need to install Node dependencies. To do so, go to the theme director
  $ cd themes/terminal
 ```
 
- then run:
+then run:
 
- ```bash
- $ npm install
- $ npm i yarn
- $ yarn
- ```
+```bash
+$ npm install
+$ npm i yarn
+$ yarn
+```
 
 After you modified the files you can run webpack in watch mode:
 
