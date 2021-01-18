@@ -1,8 +1,12 @@
-const mobileQuery = getComputedStyle(document.body).getPropertyValue("--phoneWidth");
+const mobileQuery = getComputedStyle(document.body).getPropertyValue(
+  "--phoneWidth"
+);
 const isMobile = () => window.matchMedia(mobileQuery).matches;
 
 const languageSelector = document.querySelector(".language-selector-current");
-const moreLanguagesContainer = document.querySelector(".language-selector__more");
+const moreLanguagesContainer = document.querySelector(
+  ".language-selector__more"
+);
 
 document.body.addEventListener("click", () => {
   if (
